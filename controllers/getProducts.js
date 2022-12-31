@@ -1,6 +1,6 @@
 const Product = require("../models/Products")
 
-const getProduct = async (req, res) => {
+const getProducts = async (req, res) => {
     const products = await Product.find();
 
     if (products) {
@@ -10,4 +10,4 @@ const getProduct = async (req, res) => {
     }
 }
 
-module.exports = getProduct
+module.exports = getProducts
